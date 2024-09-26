@@ -5,7 +5,7 @@
 
 html {
     scroll-behavior: smooth;
-  }
+}
 
 body {
     font-family: "Montserrat", sans-serif;
@@ -19,45 +19,13 @@ body {
 
 .header {
     height: 800px;
+    background: url(svg/Star\ 1.svg) no-repeat 156px 69px,
+        url(svg/Star\ 2.svg) no-repeat 63px 94px,
+        url(svg/Star\ 3.svg) no-repeat right top,
+        url(svg/Star\ 4.svg) no-repeat 1013px 568px,
+        url(svg/Star\ 5.svg) no-repeat 948px 538px;
     background-color: rgb(225, 255, 143);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     position: relative;
-}
-
-.star1 {
-    display: flex;
-    margin-top: 69px;
-    margin-left: 36px;
-    position: absolute;
-}
-
-.star2 {
-    display: flex;
-    margin-top: 94px;
-    margin-left: -57px;
-    position: absolute;
-}
-
-.star3 {
-    margin-top: -24%;
-    margin-left: 50%;
-    position: absolute;
-}
-
-.star4 {
-    display: flex;
-    margin-top: 538px;
-    margin-left: 828px;
-    position: absolute;
-}
-
-.star5 {
-    display: flex;
-    margin-top: 568px;
-    margin-left: 893px;
-    position: absolute;
 }
 
 .header__content {
@@ -84,7 +52,7 @@ body {
     flex-grow: 0;
 }
 
-.header__action{
+.header__action {
     margin-top: 24px;
 }
 
@@ -129,7 +97,6 @@ body {
 .header__animation {
     box-sizing: border-box;
     border: 1px solid rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(50px);
     background-color: rgb(188, 236, 48);
     position: relative;
     width: 3220px;
@@ -139,7 +106,6 @@ body {
     padding: 27px 49px 27px 49px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     align-items: center;
     flex-wrap: nowrap;
     gap: 51px;
@@ -155,33 +121,19 @@ body {
     text-transform: uppercase;
 }
 
-.top {
+.navigation {
+    background: url(svg/Star\ 6.svg) no-repeat 933px 77px,
+        url(svg/Star\ 11.svg) no-repeat 25px 770px,
+        url(svg/Star\ 12.svg) no-repeat 40px 822px;
     background-color: rgb(32, 32, 39);
-    padding-left: 119px;
-    padding-right: 120px;
+}
+
+.navigation-title {
     padding-top: 94px;
-    padding-bottom: 50px;
 }
 
-.star6 {
-    box-sizing: border-box;
-    margin-top: 7px;
-    margin-left: 63%;
-    position: absolute;
-}
-
-.star7 {
-    display: flex;
-    margin-top: 640px;
-    margin-left: -91px;
-    position: absolute;
-}
-
-.star8 {
-    display: flex;
-    margin-top: 680px;
-    margin-left: -60px;
-    position: absolute;
+.navigation-title__mobile {
+    display: none;
 }
 
 .navigation-heading {
@@ -194,7 +146,11 @@ body {
     margin-bottom: 24px;
 }
 
-.nvigation-text {
+.navigation-heading__mobile{
+    display: none;
+}
+
+.navigation-text {
     color: rgb(255, 255, 255);
     font-size: 24px;
     font-weight: 400;
@@ -203,25 +159,35 @@ body {
     text-align: left;
 }
 
-.top__navigation-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 72px;
-    gap: 32px;
+.navigation-content {
+    padding-top: 72px;
+    padding-bottom: 50px;
     position: relative;
 }
 
-.top__navigation-block {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: stretch;
-    gap: 32px;
-    max-width: 378px;
+.navigation-content__mobile {
+    display: none;
 }
 
-.top__navigation-items {
+.navigation__block-high {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.navigation__block-down {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 32px;
+}
+
+.navigation-items {
     background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
@@ -230,9 +196,10 @@ body {
     border-radius: 30px;
     transition: transform 0.5s ease;
     text-decoration: none;
+    width: 378px;
 }
 
-.top__navigation-items:hover {
+.navigation-items:hover {
     transform: scale(1.1);
 }
 
@@ -242,7 +209,6 @@ body {
     justify-content: space-between;
     gap: 26px;
     align-items: flex-start;
-    gap: 10;
     padding: 32px 32px 36px 32px;
 }
 
@@ -269,3 +235,33 @@ body {
     text-align: left;
     color: black;
 }
+
+.game__target{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.navigation___action {
+    display: none;
+}
+
+.footer {
+    background: rgb(189, 237, 53);
+    height: 150px;
+}
+
+.footer-heading {
+    display: flex;
+    justify-content: center;
+    padding-top: 61px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+    letter-spacing: 0px;
+}
+
+@import 'tablet-style';
+@import 'mobile-style';
