@@ -19,7 +19,7 @@ body {
 
 .header {
   height: 800px;
-  background: url(svg/Star\ 1.svg) no-repeat 156px 69px, url(svg/Star\ 2.svg) no-repeat 63px 94px, url(svg/Star\ 3.svg) no-repeat right top, url(svg/Star\ 4.svg) no-repeat 1013px 568px, url(svg/Star\ 5.svg) no-repeat 948px 538px;
+  background: url(svg/Star\ 1.svg) no-repeat 11% 69px, url(svg/Star\ 2.svg) no-repeat 5% 94px, url(svg/Star\ 3.svg) no-repeat 103% top, url(svg/Star\ 4.svg) no-repeat 76% 568px, url(svg/Star\ 5.svg) no-repeat 69% 538px;
   background-color: rgb(225, 255, 143);
   position: relative;
 }
@@ -97,7 +97,7 @@ body {
   position: relative;
   width: 3220px;
   height: 90px;
-  left: -150px;
+  left: -75%;
   top: 710px;
   padding: 27px 49px 27px 49px;
   display: flex;
@@ -118,7 +118,7 @@ body {
 }
 
 .navigation {
-  background: url(svg/Star\ 6.svg) no-repeat 933px 77px, url(svg/Star\ 11.svg) no-repeat 25px 770px, url(svg/Star\ 12.svg) no-repeat 40px 822px;
+  background: url(svg/Star\ 6.svg) no-repeat 116% 12%, url(svg/Star\ 13.svg) no-repeat 25px 770px, url(svg/Star\ 12.svg) no-repeat 40px 822px;
   background-color: rgb(32, 32, 39);
 }
 
@@ -126,7 +126,7 @@ body {
   padding-top: 94px;
 }
 
-.navigation-title__mobile {
+.navigation__title-mobile {
   display: none;
 }
 
@@ -159,7 +159,7 @@ body {
   position: relative;
 }
 
-.navigation-content__mobile {
+.navigation__content-mobile {
   display: none;
 }
 
@@ -230,16 +230,106 @@ body {
   color: black;
 }
 
-.game__target {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
+.navigation___action {
+  display: none;
+}
+
+.border01 {
+  height: 1px;
+  background-image: linear-gradient(90deg, #7d7a7a, #7d7a7a 75%, transparent 75%, transparent 100%);
+  background-size: 20px 1px;
+  border: none;
+  margin-left: -75%;
+  margin-right: -75%;
+}
+
+.games {
+  background: url(svg/Star\ 8.svg) no-repeat 1277px 93px, url(svg/Star\ 9.svg) no-repeat 1320px 126px, url(svg/Star\ 10.svg) no-repeat 1249px 3414px, url(svg/Star\ 11.svg) no-repeat 1319px 3366px;
+  background-color: rgb(32, 32, 39);
+  padding-top: 46px;
+}
+
+.games__title {
+  margin-bottom: 50px;
+}
+
+.games__content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding-bottom: 144px;
+}
+
+.games__block {
+  box-sizing: border-box;
+  border-radius: 30px;
+  box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
+  background: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.games__left {
+  text-align: left;
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 600px;
+}
+
+.games__name {
+  color: rgb(32, 32, 39);
+  font-family: Montserrat;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 59px;
   letter-spacing: 0px;
   text-align: left;
 }
 
-.navigation___action {
-  display: none;
+.games__target {
+  color: rgb(32, 32, 39);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.games__button {
+  width: 247px;
+  height: 66px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 28px 16px 28px;
+  box-sizing: border-box;
+  border: 1px solid rgb(32, 32, 39);
+  border-radius: 60px;
+  background: rgb(32, 32, 39);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 142%;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  margin-top: 12px;
+}
+
+.games__button:hover {
+  border: 1px solid rgb(255, 255, 255);
+  background: rgb(255, 255, 255);
+  color: rgb(32, 32, 39);
+  border-color: rgb(32, 32, 39);
+}
+
+.games__right {
+  box-sizing: border-box;
+  border-radius: 30px;
 }
 
 .footer {
@@ -321,7 +411,7 @@ body {
   .navigation-title {
     display: none;
   }
-  .navigation-title__mobile {
+  .navigation__title-mobile {
     display: contents;
   }
   .navigation-heading {
@@ -337,7 +427,7 @@ body {
   .navigation-content {
     display: none;
   }
-  .navigation-content__mobile {
+  .navigation__content-mobile {
     display: block;
     padding-bottom: 48px;
   }
@@ -348,7 +438,7 @@ body {
   .navigation-items:hover {
     transform: none;
   }
-  .navigation__button {
+  .card-name__button {
     width: 285px;
     height: 55px;
     display: flex;
@@ -369,6 +459,16 @@ body {
     text-align: center;
     color: rgb(255, 255, 255);
     text-decoration: none;
+  }
+  .game-target {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+  .games {
+    display: none;
   }
   .footer {
     height: 100px;

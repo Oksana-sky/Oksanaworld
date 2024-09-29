@@ -68,7 +68,7 @@
         display: none;
     }
 
-    .navigation-title__mobile {
+    .navigation__title-mobile {
         display: contents;
     }
 
@@ -87,7 +87,7 @@
         display: none;
     }
 
-    .navigation-content__mobile {
+    .navigation__content-mobile {
         display: block;
         padding-bottom: 48px;
     }
@@ -101,7 +101,7 @@
         transform: none;
     }
 
-    .navigation__button {
+    .card-name__button {
         width: 285px;
         height: 55px;
         display: flex;
@@ -124,6 +124,18 @@
         text-decoration: none;
     }
 
+    .game-target{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+
+    .games{
+        display: none;
+    }
+    
     .footer {
         height: 100px;
     }
