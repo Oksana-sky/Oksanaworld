@@ -92,14 +92,14 @@
 
 //Задание 3
 
-let clientOS = prompt('Какую операционную систему вы используете? 0 — iOS, 1 — Android');
-let clientDeviceYear = Number (prompt('Введите год производства телефона'));
-if (clientOS == 0 && clientDeviceYear <= 2015) {
-    alert('Установите облегченную версию приложения для iOS по ссылке');
-} else if (clientOS == 1 && clientDeviceYear <= 2015) {
-    alert('Установите облегченную версию приложения для Android по ссылке');
-} else if (clientOS == 0 && clientDeviceYear >= 2015) {
-    alert('Установите версию приложения для iOS по ссылке');
-} else {
-    alert('Установите версию приложения для Android по ссылке');
-}
+//let clientOS = prompt('Какую операционную систему вы используете? 0 — iOS, 1 — Android');
+//let clientDeviceYear = Number (prompt('Введите год производства телефона'));
+//if (clientOS == 0 && clientDeviceYear <= 2015) {
+//    alert('Установите облегченную версию приложения для iOS по ссылке');
+//} else if (clientOS == 1 && clientDeviceYear <= 2015) {
+//    alert('Установите облегченную версию приложения для Android по ссылке');
+//} else if (clientOS == 0 && clientDeviceYear >= 2015) {
+//    alert('Установите версию приложения для iOS по ссылке');
+//} else {
+//    alert('Установите версию приложения для Android по ссылке');
+//}
