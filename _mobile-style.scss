@@ -59,6 +59,11 @@
         text-transform: uppercase;
     }
 
+    .navigation {
+        background: none;
+        background-color: rgb(32, 32, 39);
+    }
+
     .animation-star {
         height: 19px;
         width: 19px;
@@ -72,7 +77,7 @@
         display: contents;
     }
 
-    .navigation-heading{
+    .navigation-heading {
         color: rgb(255, 255, 255);
         font-size: 40px;
         font-weight: 700;
@@ -124,7 +129,14 @@
         text-decoration: none;
     }
 
-    .game-target{
+    .card-name__button:hover {
+        border: 1px solid rgb(255, 255, 255);
+        background: rgb(255, 255, 255);
+        color: rgb(32, 32, 39);
+        border-color: rgb(32, 32, 39);
+    }
+
+    .game-target {
         font-size: 16px;
         font-weight: 400;
         line-height: 20px;
@@ -132,10 +144,10 @@
         text-align: left;
     }
 
-    .games{
+    .games {
         display: none;
     }
-    
+
     .footer {
         height: 100px;
     }

@@ -330,6 +330,7 @@ body {
 .games__right {
   box-sizing: border-box;
   border-radius: 30px;
+  display: flex;
 }
 
 .footer {
@@ -404,6 +405,10 @@ body {
     text-align: left;
     text-transform: uppercase;
   }
+  .navigation {
+    background: none;
+    background-color: rgb(32, 32, 39);
+  }
   .animation-star {
     height: 19px;
     width: 19px;
@@ -459,6 +464,12 @@ body {
     text-align: center;
     color: rgb(255, 255, 255);
     text-decoration: none;
+  }
+  .card-name__button:hover {
+    border: 1px solid rgb(255, 255, 255);
+    background: rgb(255, 255, 255);
+    color: rgb(32, 32, 39);
+    border-color: rgb(32, 32, 39);
   }
   .game-target {
     font-size: 16px;
