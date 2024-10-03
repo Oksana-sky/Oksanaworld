@@ -56,7 +56,7 @@ for (let i = dayFridey; i < allDay; i+=7) {
 
 //Задание 1
 
-let k = 100;
+/* let k = 100;
 
 let iterations = 0;
 
@@ -114,4 +114,4 @@ for (const item of number) {
     }
 }
 
-console.log(minimum);
+console.log(minimum); */
