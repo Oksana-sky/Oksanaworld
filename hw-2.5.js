@@ -1,13 +1,13 @@
 //Задание 1
 
-const min = (a, b) => (a<b) ? a:b;
+/* const min = (a, b) => (a<b) ? a:b;
 
 console.log (min(8,4));
-console.log (min(6,6));
+console.log (min(6,6)); */
 
 //Задание 2
 
-function isEven(n){
+/* function isEven(n){
     if (n % 2 === 0) {
         return 'Число четное';
     } else {
@@ -17,16 +17,16 @@ function isEven(n){
 
 console.log(isEven(2));
 console.log(isEven(3));
-
+ */
 //Задание 3
 
-const up = (n) => n**2;
+/* const up = (n) => n**2;
 
 console.log(up(3));
-
+ */
 //Задание 4
 
-function age() {
+/* function age() {
     let age = + prompt('Сколько тебе лет?');
     if (age<0) {
         alert ('Вы ввели неправильное значение');
@@ -37,11 +37,11 @@ function age() {
     }
 }
 
-age();
+age(); */
 
 //Задание 5
 
-function calc(a,b){
+/* function calc(a,b){
     if (isNaN(a)  || isNaN(b)) {
         return 'Одно или оба значения не являются числом';
     } else {
@@ -51,24 +51,24 @@ function calc(a,b){
 
 console.log(calc(8,4));
 console.log(calc('word','word'));
-console.log(calc('word',4));
+console.log(calc('word',4)); */
 
 //Задание 6
 
-function getNumber() {
+/* function getNumber() {
     let number = prompt('Введите число');
     if (isNaN(number)) {
         return 'Переданный параметр не является числом';
     } else {
-        return `n в кубе равняется ${number ** 3}`;
+        return `${number} в кубе равняется ${number ** 3}`;
     }
-}
+} */
 
-console.log(getNumber());
+/* console.log(getNumber()); */
 
 //Задание 7
 
-function getArea() {
+/* function getArea() {
     return Math.PI*this.radius ** 2;
 }
 
@@ -81,13 +81,13 @@ const circle1 = {
     methodGetArea: getArea,
     methodGetPerimetr: getPerimetr,
 
-}
+} */
 
-const circle2 = {
+/* const circle2 = {
     radius:5,
     methodGetArea: getArea,
     methodGetPerimetr: getPerimetr,
 }
 
 console.log(circle1.methodGetArea());
-console.log(circle2.methodGetArea());
+console.log(circle2.methodGetArea()); */
