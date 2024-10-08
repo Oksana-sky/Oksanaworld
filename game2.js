@@ -26,14 +26,14 @@ function startGame() {
         alert(mathExp);
         const userAnswer = prompt("Посчитай и выведи ответ")
 
-        if (isNaN(userAnswer)) {
+        if (isNaN(Number(userAnswer))) {
             alert('Введи число!');
         } else if (+userAnswer === result) {
             alert('Молодец, верно!');
             break;
         } else if (userAnswer === null) {
             break;
-        }else {
+        } else {
             alert('Не верно. Попробуй еще.');
         }
     }
