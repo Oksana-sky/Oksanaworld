@@ -1,14 +1,14 @@
 const button2 = document.getElementById('myGame2');
 
+const randomeIndex = () => Math.floor(Math.random() * 4);
+
+function randomNumber() {
+    return Math.floor(Math.random() * 10);
+}
+
 button2.onclick = startGame;
 
 function startGame() {
-
-    const randomeIndex = () => Math.floor(Math.random() * 4);
-
-    function randomNumber() {
-        return Math.floor(Math.random() * 10);
-    }
 
     const signs = ['+', '-', '*', '/'];
     const firstValue = randomNumber();
