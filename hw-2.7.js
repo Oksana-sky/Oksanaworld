@@ -67,7 +67,7 @@ console.log(currentDate); */
 
 //Задание 10
 
-function formatDate(date) {
+/* function formatDate(date) {
     const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
     const months = ["Январь", "Февраль", "Март", "Апрель", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
     const year = date.getFullYear();
@@ -83,4 +83,4 @@ function formatDate(date) {
     Время: ${hours}:${minutes}:${seconds}`;
 }
 
-console.log(formatDate(new Date()));
+console.log(formatDate(new Date())); */
