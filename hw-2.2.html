@@ -1,11 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Задания</title>
+    <style>
+        .heading_text {
+            display: none;
+        }
+    </style>
 </head>
+
 <body>
+    <h1 class="heading">Инструкция</h1>
+    <p class="description">изменение элементов по классу</p>
+    <p class="text">Меняем цвет текста</p>
+    <p class="description">все элементы с классом</p>
+    <button class="btn">Скрыть</button>
+    <button class="btncolor">Изменить цвет</button>
+    <button class="btntext">Изменить текст</button>
+    <button class="btnpar">Добавить элемент</button>
+    <div class="content"></div>
+    <button class="btndel">Удалить элемент</button>
+    
+    <script>
+        const headingEl = document.querySelector('.heading');
+        const textEl = document.querySelector('.text');
+        const descriptionEl = document.querySelector('.description');
+        const descriptionElClass = document.querySelectorAll('.description');
+        const btnEl = document.querySelector('.btn');
+        const btnColorEl = document.querySelector('.btncolor');
+        const btnTextEl = document.querySelector('.btntext');
+        const btnParEl = document.querySelector('.btnpar');
+        const contentEl = document.querySelector('.content');
+        const btnDelEl = document.querySelector('.btndel');
+
+        btnEl.addEventListener('click', () => {
+            headingEl.classList.toggle('heading_text');
+        });
+
+        btnColorEl.addEventListener('click', () => {
+            textEl.style.color = 'blue';
+            descriptionElClass.forEach(element => {
+                element.textContent = 'Новый текст';
+            });
+        });
+
+        btnTextEl.addEventListener('click', () => {
+            headingEl.textContent = 'Привет, мир!';
+            descriptionElClass.forEach(element => {
+                element.textContent = 'Измененный текст';
+            });
+        });
+
+        btnParEl.addEventListener('click', () => {
+            const paragrafEl = document.createElement('p');
+            paragrafEl.textContent = 'Новый абзац';
+            paragrafEl.classList.add('paragraf');
+            contentEl.appendChild(paragrafEl);
+        });
+
+        btnDelEl.addEventListener('click', () => {
+            descriptionEl.remove ();
+        });
+
+    </script>
 
     <script src="hw-2.2.js"></script>
     <script src="hw-2.3.js"></script>
@@ -14,5 +74,7 @@
     <script src="hw-2.6.js"></script>
     <script src="hw-2.7.js"></script>
     <script src="hw-2.8.js"></script>
+    <script src="hw-2.9.js"></script>
 </body>
+
 </html>

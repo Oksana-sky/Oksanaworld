@@ -79,7 +79,7 @@ delayForSecond(function () {
 
 //Задание 5
 
-function delayForSecond(cb) {
+/* function delayForSecond(cb) {
     setTimeout(() => {
         console.log('Прошла одна секунда');
         if (cb) {
@@ -92,4 +92,4 @@ function sayHi(name) {
     console.log(`Привет, ${name}!`);
 };
 
-delayForSecond(() => sayHi('Глеб'));
+delayForSecond(() => sayHi('Глеб')); */
