@@ -1,4 +1,6 @@
 const button2 = document.getElementById('myGame2');
+const button7 = document.getElementById('myGame2.1');
+const button12 = document.getElementById('myGame2.2');
 
 const randomeIndex = () => Math.floor(Math.random() * 4);
 
@@ -7,6 +9,8 @@ function randomNumber() {
 }
 
 button2.onclick = startGame;
+button7.onclick = startGame;
+button12.onclick = startGame;
 
 function startGame() {
 

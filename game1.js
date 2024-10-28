@@ -1,6 +1,10 @@
 const button = document.getElementById('myGame1');
+const button1 = document.getElementById('myGame1.1');
+const button11 = document.getElementById('myGame1.2');
 
 button.onclick = startGame;
+button1.onclick = startGame;
+button11.onclick = startGame;
 
 function startGame() {
 
