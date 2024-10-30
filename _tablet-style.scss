@@ -1,4 +1,4 @@
-@media (max-width: 1024px) {
+@media (max-width: 1198px) {
     .center {
         padding-left: calc(50% - 425px);
         padding-right: calc(50% - 425px);
@@ -8,6 +8,7 @@
         &__content {
             height: 350px;
             margin-top: 164px;
+            margin-left: 16px;
         }
 
         &__heading {
@@ -19,6 +20,11 @@
     }
 
     .navigation {
+
+        &-title {
+            margin-left: 16px;
+        }
+
         &-content {
             display: none;
 
@@ -31,10 +37,9 @@
     .content-tablet {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        column-gap: 100px;
         row-gap: 50px;
         margin-top: 50px;
-        margin-bottom: 50px;
+        justify-items: center;
     }
 
     .border01 {
@@ -43,7 +48,7 @@
         background-size: 20px 1px;
         border: none;
         margin-left: -12%;
-        width: 1024px;
+
     }
 
     .games {
@@ -62,7 +67,7 @@
             }
         }
 
-        &__name{
+        &__name {
             font-size: 36px;
             line-height: 40px;
         }

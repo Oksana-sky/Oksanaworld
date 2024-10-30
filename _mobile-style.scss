@@ -9,8 +9,8 @@
         background: url(svg/Star\ 1.1.svg) no-repeat 91px 64px,
             url(svg/Star\ 2.2.svg) no-repeat 37px 97px,
             url(svg/Star\ 7.svg) no-repeat 100% 0%,
-            url(svg/Star\ 4.2.svg) no-repeat 303px 580px,
-            url(svg/Star\ 5.2.svg) no-repeat 272px 558px;
+            url(svg/Star\ 4.2.svg) no-repeat 90% 580px,
+            url(svg/Star\ 5.2.svg) no-repeat 76% 558px;
         background-color: rgb(225, 255, 143);
         overflow: hidden;
 
@@ -192,6 +192,33 @@
             font-weight: 600;
             line-height: 20px;
             padding-top: 40px;
+        }
+    }
+
+    @media (min-width: 376px) and (max-width: 766px) {
+
+        .header {
+
+            &__content{
+                margin-top: 70px;
+            }
+
+            &__heading {
+                font-size: 52px;
+                line-height: 64px;
+            }
+
+            &__paragraf {
+                font-size: 20px;
+                line-height: 26px;
+                margin-left: 15px;
+                margin-right: 15px;
+            }
+
+            &__button-mobile {
+                font-size: 20px;
+                line-height: 26px;
+            }
         }
     }
 }
