@@ -1,8 +1,12 @@
 const button4 = document.getElementById('myGame4');
+const button9 = document.getElementById('myGame4.1');
+const button14 = document.getElementById('myGame4.2');
 
 const randommIndex = () => Math.floor(Math.random() * 3);
 
 button4.onclick = startGame;
+button9.onclick = startGame;
+button14.onclick = startGame;
 
 let check, a, b;
 
